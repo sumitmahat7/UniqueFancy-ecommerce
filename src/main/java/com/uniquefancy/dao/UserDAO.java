@@ -20,7 +20,7 @@ public class UserDAO {
             ps.setString(1, user.getFullName());
             ps.setString(2, user.getEmail().toLowerCase());
             ps.setString(3, user.getPhone());
-            ps.setString(4, PasswordUtil.hashPassword(user.getPassword()));
+            ps.setString(4, user.getPassword());
             ps.setString(5, user.getRole() != null ? user.getRole() : "user");
             ps.setString(6, user.getAddress());
 

@@ -221,23 +221,22 @@ INSERT INTO product_sizes (product_id, size_name, size_stock) VALUES
 -- INSERT USERS
 -- ============================================
 INSERT INTO users (full_name, email, phone, password, role, address) VALUES
-                                                                         ('Admin User', 'admin@uniquefancy.com', '9800000000', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYkZ5xVqZQkZ5xVqZQkZ5xVqZQkZ5xVq', 'admin', 'Pokhara'),
-                                                                         ('Gobin Chhantyal', 'gc@example.com', '9800000001', '$2a$10$K7LUjYqZQkZ5xVqZQkZ5xVuZK7LUjYqZQkZ5xVqZQkZ5xVqZQkZ5xVq', 'user', 'Kathmandu'),
-                                                                         ('Sumit Mahat', 'sm@example.com', '9800000002', '$2a$10$K7LUjYqZQkZ5xVqZQkZ5xVuZK7LUjYqZQkZ5xVqZQkZ5xVqZQkZ5xVq', 'user', 'pokhara');
+                                                                         ('Admin User', 'admin@uniquefancy.com', '9800000000', '$2a$10$gqTPyFiwkQQSzgtCL9ZzG.PcAfGIHsI/.vMfgAuVj.OwhKY.SVF3u', 'admin', 'Pokhara'),
+                                                                         ('gobin Chhantyal', 'gc@gmail.com', '9800000001', '$2a$10$sMi5jF2fA8KiqOBLaXjcMe424brSKQHRI4ixwgD6pWVnlc5DtXf62', 'user', 'Pokhara'),
+                                                                         ('Sid Malla', 'sid@gmail.com', '9090909090', '$2a$10$w9mfQnicwNNZ22j95lwuBeKDJYLsEI2t8oe650taAJfVM6uHdyyCa', 'user', 'Damside');
 
 -- ============================================
 -- INSERT ORDERS
 -- ============================================
 INSERT INTO orders (user_id, total_amount, status, payment_method, shipping_address) VALUES
-                                                                                         (2, 3798, 'delivered', 'Cash on Delivery', 'Kathmandu, Nepal'),
-                                                                                         (2, 5197, 'processing', 'eSewa', 'Kathmandu, Nepal');
+                                                                                         (2, 3798.00, 'delivered', 'Cash on Delivery', 'Kathmandu, Nepal'),
+                                                                                         (2, 5197.00, 'processing', 'eSewa', 'Kathmandu, Nepal');
 
 -- ============================================
 -- INSERT ORDER ITEMS
 -- ============================================
 INSERT INTO order_items (order_id, product_id, quantity, price, size) VALUES
-                                                                          (1, 1, 2, 1299, 'M'),
-                                                                          (1, 4, 1, 999, 'L'),
-                                                                          (2, 9, 1, 3499, 'S'),
-                                                                          (2, 33, 1, 1299, 'M');
-
+                                                                          (1, 1, 2, 1299.00, 'M'),
+                                                                          (1, 4, 1, 999.00, 'L'),
+                                                                          (2, 9, 1, 3499.00, 'S'),
+                                                                          (2, 33, 1, 1299.00, 'M');

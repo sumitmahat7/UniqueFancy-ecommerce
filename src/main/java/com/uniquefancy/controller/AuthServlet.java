@@ -110,6 +110,7 @@ public class AuthServlet extends HttpServlet {
         }
     }
 
+
     private void doRegister(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
