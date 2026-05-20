@@ -1,0 +1,264 @@
+/*
+   UNIQUE FANCY - RESPONSIVE STYLESHEET
+   Mobile First, Tablet & Desktop Breakpoints
+    */
+
+/* ---- Tablet View (max-width: 1024px) ---- */
+@media (max-width: 1024px) {
+    .hero-visual {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Mobile View (max-width: 768px) ---- */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 8px;
+        margin-left: auto;
+    }
+
+    /* Header */
+    .header-inner {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* Grids */
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Admin */
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .admin-content {
+        padding: 20px;
+    }
+
+    .stat-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    /* Cart Page */
+    .cart-table th,
+    .cart-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* ---- Small Mobile View (max-width: 480px) ---- */
+@media (max-width: 480px) {
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Grids */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Admin Stats */
+    .stat-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Header */
+    .header-inner {
+        padding: 0 16px;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Cart Page */
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Forms */
+    .form-control {
+        padding: 8px 12px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+/* ---- Mobile Menu Button (shown on mobile only) ---- */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* ---- Print Styles (for reports) ---- */
+@media print {
+    .admin-sidebar,
+    .nav-actions,
+    .btn,
+    footer,
+    .header {
+        display: none;
+    }
+
+    .admin-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: white;
+    }
+}
+
+/* Mobile Menu Button - Hidden on desktop */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+}
+
+/* Show mobile menu button and hide nav links on mobile */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #1a1a2e;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .header-inner {
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
